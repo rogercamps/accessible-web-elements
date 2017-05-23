@@ -1,6 +1,7 @@
  html, body {
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -11,13 +12,13 @@
 }
 
 .sidebar {
-    background-color: lightgray;
+    background-color: #F4F4F4;
     -webkit-flex: 1;
     flex: 1;
 }
 
 main {
-    background-color: lightblue;
+    background-color: #FFFFFF;
     padding: 10px;
     -webkit-flex: 5;
     flex: 5;
@@ -37,3 +38,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+code {
+  padding: 2px 6px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/*li {
+  color: red;
+}*/
