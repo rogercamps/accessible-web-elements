@@ -10,54 +10,55 @@
     <div class="container">
       <aside class="sidebar">
         <nav class="sidenav">
-          <ol>
-            <li><a href="#overview">Overview</a></li>
+          <h1 class="sidebarTitle">OUR STYLE<br>GUIDE</h1>
+          <ul class="sidebarBulletPoint">
+            <li><a href="#overview"><span>1</span>Overview</a></li>
 
-            <li><a href="#forms">Forms</a></li>
-              <ol>
-                <li><a href="#checkboxes">Checkboxes</a></li>
-                <li>Radio Buttons</li>
-                <li>Search</li>
-                <li>Select Lists</li>
-                <li>Text Inputs & Textarea</li>
-                <li>Toggles</li>
-                <li>Tooltips</li>
-              </ol>
+            <li><a href="#forms"><span>2</span>Forms</a></li>
+              <ul class="sidebarBulletPoint">
+                <li><a href="#checkboxes"><span>1.1</span>Checkboxes</a></li>
+                <li><span>2.1</span>Radio Buttons</li>
+                <li><span>2.2</span>Search</li>
+                <li><span>2.3</span>Select Lists</li>
+                <li><span>2.4</span>Text Inputs & Textarea</li>
+                <li><span>2.5</span>Toggles</li>
+                <li><span>2.6</span>Tooltips</li>
+              </ul>
 
-            <li>General</li>
-              <ol>
-                <li>Buttons</li>
-                <li>Colors</li>
-                <li>Link Focus</li>
-                <li>Read More Links</li>
-                <li>Skip Links</li>
-                <li>Typography</li>
-              </ol>
+            <li><span>3</span>General</li>
+              <ul class="sidebarBulletPoint">
+                <li><span>3.1</span>Buttons</li>
+                <li><span>3.2</span>Colors</li>
+                <li><span>3.3</span>Link Focus</li>
+                <li><span>3.4</span>Read More Links</li>
+                <li><span>3.5</span>Skip Links</li>
+                <li><span>3.6</span>Typography</li>
+              </ul>
 
-            <li>Media</li>
-              <ol>
-                <li>Audio</li>
-                <li>Image Gallery</li>
-                <li>Images</li>
-                <li>Site Logo</li>
-                <li>SVGs</li>
-                <li>Videos</li>
-              </ol>
+            <li><span>4</span>Media</li>
+              <ul class="sidebarBulletPoint">
+                <li><span>4.1</span>Audio</li>
+                <li><span>4.2</span>Image Gallery</li>
+                <li><span>4.3</span>Images</li>
+                <li><span>4.4</span>Site Logo</li>
+                <li><span>4.5</span>SVGs</li>
+                <li><span>4.1</span>Videos</li>
+              </ul>
 
-            <li>Navigation</li>
-              <ol>
-                <li>Breadcrumbs</li>
-                <li>Basic Navbar</li>
-                <li>Navbar Mobile Icon</li>
-                <li>Pagination</li>
-              </ol>
+            <li><span>5</span>Navigation</li>
+              <ul class="sidebarBulletPoint">
+                <li><span>5.1</span>Breadcrumbs</li>
+                <li><span>5.2</span>Basic Navbar</li>
+                <li><span>5.3</span>Navbar Mobile Icon</li>
+                <li><span>5.4</span>Pagination</li>
+              </ul>
 
-            <li>Structure</li>
-              <ol>
-                <li>Headings</li>
-                <li>Tables</li>
-              </ol>
-          </ol>
+            <li><span>6</span>Structure</li>
+              <ul class="sidebarBulletPoint">
+                <li><span>6.1</span>Headings</li>
+                <li>T<span>6.2</span>ables</li>
+              </ul>
+          </ul>
         </nav>
       </aside>
 
@@ -114,14 +115,22 @@
             The <code>&lt;span class="visuallyhidden"&gt;</code> content in the second example is not necessary information to choose an option. It is important to point out that in some cases, it is very useful to add additional information. However, in this case, it is meant as a joke for people using screen-readers. And why not have a joke visible only to people using screen-readers? How many times do we hide content from them?
           </blockquote>
           <div>
-          </div>
-            <h2>WCAG 2.0 Guidelines</h2>
+            <button><h2>WCAG 2.0 Guidelines</h2></button>
             <p>
             <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
             - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
             <br>
             <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
             - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
+            - Headings and labels describe topic or purpose. (Level AA)
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
+            - Labels or instructions are provided when content requires user input. (Level A)
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+            - Labels or instructions are provided when content requires user input. (Level A)
             </p>
           </div>
           <h3>Option #1: Use fieldsets to group options</h3>
@@ -224,6 +233,98 @@
 
 
           </div>
+          <section class="checkboxes-section">
+            <div class="groupOption1">
+              <h3>Option #1: Use fieldsets to group options</h3>
+              <fieldset>
+                <strong>Who is your favorite 19th century scientist</strong>
+                <br>
+                <input id="bell" type="checkbox" name="scientist" value="bell"/>
+                <label for="bell">Alexander Graham Bell</label>
+                  <br>
+                <input id="edison" type="checkbox" name="scientist" value="edison"/>
+                <label for="edison">Thomas Edison</label>
+                  <br>
+                <input id="morse" type="checkbox" name="scientist" value="morse"/>
+                <label for="morse">Samuel Morse</label>
+                  <br>
+                <input id="nobel" type="checkbox" name="scientist" value="nobel"/>
+                <label for="nobel">Alfreds Nobel</label>
+                  <br>
+                <input id="pasteur" type="checkbox" name="scientist" value="pasteur"/>
+                <label for="pasteur">Louis Pasteur</label>
+                  <br>
+                <input id="tesla" type="checkbox" name="scientist" value="tesla"/>
+                <label for="tesla">Nikola Tesla</label>
+              </fieldset>
+            </div>
+            <div class="groupOption2">
+              <h3>Option #2: Use ARIA to group options</h3>
+              <div role="group" aria-labelledby="beatle_head">
+                <h4>Who is the best Beatle?</h4>
+                <div>
+                  <input id="lennon" type="checkbox" name="beatle" value="lennon"/>
+                  <label for="lennon">John Lennon</label>
+                  <input id="mccartney" type="checkbox" name="beatle" value="mccartney"/>
+                  <label for="mccartney">Paul McCartney</label>
+                  <input id="harrison" type="checkbox" name="beatle" value="harrison"/>
+                  <label for="harrison">George Harrison</label>
+                  <input id="starr" type="checkbox" name="beatle" value="starr"/>
+                  <label for="starr">Ringo Starr</label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br>
+          <button><h2>Show Markup Example</h2></button>
+          <br>
+          <pre>
+            <code>
+              &lt;section class="checkboxes-section"&gt;
+                &lt;div class="groupOption1"&gt;
+                  &lt;h3&gt;Option #1: Use fieldsets to group options&lt;/h3&gt;
+                  &lt;fieldset&gt;
+                    &lt;strong&gt;Who is your favorite 19th century scientist&lt;/strong&gt;
+                    &lt;br&gt;
+                    &lt;input id="bell" type="checkbox" name="scientist" value="bell"/&gt;
+                    &lt;label for="bell"&gt;Alexander Graham Bell&lt;/label&gt;
+                      &lt;br&gt;
+                    &lt;input id="edison" type="checkbox" name="scientist" value="edison"/&gt;
+                    &lt;label for="edison"&gt;Thomas Edison&lt;/label&gt;
+                      &lt;br&gt;
+                    &lt;input id="morse" type="checkbox" name="scientist" value="morse"/&gt;
+                    &lt;label for="morse"&gt;Samuel Morse&lt;/label&gt;
+                      &lt;br&gt;
+                    &lt;input id="nobel" type="checkbox" name="scientist" value="nobel"/&gt;
+                    &lt;label for="nobel"&gt;Alfreds Nobel&lt;/label&gt;
+                      &lt;br&gt;
+                    &lt;input id="pasteur" type="checkbox" name="scientist" value="pasteur"/&gt;
+                    &lt;label for="pasteur"&gt;Louis Pasteur&lt;/label&gt;
+                      &lt;br&gt;
+                    &lt;input id="tesla" type="checkbox" name="scientist" value="tesla"/&gt;
+                    &lt;label for="tesla"&gt;Nikola Tesla&lt;/label&gt;
+                  &lt;/fieldset&gt;
+                &lt;/div&gt;
+                &lt;div class="groupOption2"&gt;
+                  &lt;h3&gt;Option #2: Use ARIA to group options&lt;/h3&gt;
+                  &lt;div role="group" aria-labelledby="beatle_head"&gt;
+                    &lt;h4&gt;Who is the best Beatle?&lt;/h4&gt;
+                    &lt;div&gt;
+                      &lt;input id="lennon" type="checkbox" name="beatle" value="lennon"/&gt;
+                      &lt;label for="lennon"&gt;John Lennon&lt;/label&gt;
+                      &lt;input id="mccartney" type="checkbox" name="beatle" value="mccartney"/&gt;
+                      &lt;label for="mccartney"&gt;Paul McCartney&lt;/label&gt;
+                      &lt;input id="harrison" type="checkbox" name="beatle" value="harrison"/&gt;
+                      &lt;label for="harrison"&gt;George Harrison&lt;/label&gt;
+                      &lt;input id="starr" type="checkbox" name="beatle" value="starr"/&gt;
+                      &lt;label for="starr"&gt;Ringo Starr&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+          <div class="line-separator"></div>
       </main>
 
     </div>
