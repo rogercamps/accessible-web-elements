@@ -50,3 +50,72 @@ code {
 /*li {
   color: red;
 }*/
+
+.square {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+    width: 180px;
+    height: 180px;
+    border-radius: 3px;
+    vertical-align: top;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.cherrySquare {
+  background-color: #e00000;
+}
+
+.rubySquare {
+  background-color: #a51323;
+}
+.seaGlassSquare {
+  background-color: #7fffd4;
+}
+.grassSquare {
+  background-color: #42dc42;
+}
+.conrflowerSquare {
+  background-color: #4083ae;
+}
+.navySquare {
+  background-color: #0a3055;
+}
+.balletSlipperSquare {
+  background-color: #ffa0e5;
+}
+.eggplantSquare {
+  background-color: #550055;
+}
+
+.blackSquare {
+  background-color: #000000;
+}
+
+.midnightSquare {
+  background-color: #464646;
+}
+
+.manateeSquare {
+  background-color: #888b8d;
+}
+
+.silverSquare {
+  background-color: #bbbbbb;
+}
+
+.altoSquare {
+  background-color: #dddddd;
+}
+
+.gallerySquare {
+  background-color: #f4f4f4;
+}
+
+.alabasterSquare {
+  background-color: #f7f7f7;
+}
+
+.whiteSquare {
+  background-color: #ffffff;
+}
