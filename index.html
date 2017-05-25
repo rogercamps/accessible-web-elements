@@ -23,14 +23,14 @@
                 <li><a href="#text-input"><span>2.4</span>Text Inputs & Textarea</a></li>
               </ul>
 
-            <li><span>3</span>General</li>
+            <li><a href="#general"><span>3</span>General</a></li>
               <ul class="sidebarBulletPoint">
-                <li><span>3.1</span>Buttons</li>
-                <li><span>3.2</span>Colors</li>
-                <li><span>3.3</span>Link Focus</li>
-                <li><span>3.4</span>Read More Links</li>
-                <li><span>3.5</span>Skip Links</li>
-                <li><span>3.6</span>Typography</li>
+                <li><a href="#buttons"><span>3.1</span>Buttons</a></li>
+                <li><a href="#colors"><span>3.2</span>Colors</a></li>
+                <li><a href="#linkfocus"><span>3.3</span>Link Focus</a></li>
+                <li><a href="#readmorelinks"><span>3.4</span>Read More Links</a></li>
+                <li><a href="#skiplinks"><span>3.5</span>Skip Links</a></li>
+                <li><a href="#typography"><span>3.6</span>Typography</a></li>
               </ul>
 
             <li><span>4</span>Media</li>
@@ -238,6 +238,23 @@
               The <code>&lt;span class="visuallyhidden"&gt;</code> content in the second example is not necessary information to choose an option. It is important to point out that in some cases, it is very useful to add additional information. However, in this case, it is meant as a joke for people using screen-readers. And why not have a joke visible only to people using screen-readers? How many times do we hide content from them?
             </blockquote>
 
+          <div class="line-separator"></div>
+          <h2><a name="checkboxes"></a>Checkboxes</h2>
+          <ul>
+            <li>
+              The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.
+            </li>
+            <li>
+              Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.
+            </li>
+            <li>
+              WAI-ARIA provides a grouping role that functions similarly to <code>fieldset</code> and <code>legend</code>. In option #2 the <code>div</code> element has <code>role=group</code> to indicate that the contained elements are members of a group and the <code>aria-labelledby</code> attribute references the id for text that will serve as the label for the group. Note: This method is not supported by all browser/AT devices.
+            </li>
+          </ul>
+          <blockquote>
+            The <code>&lt;span class="visuallyhidden"&gt;</code> content in the second example is not necessary information to choose an option. It is important to point out that in some cases, it is very useful to add additional information. However, in this case, it is meant as a joke for people using screen-readers. And why not have a joke visible only to people using screen-readers? How many times do we hide content from them?
+          </blockquote>
+          <div>
             <button><h2>WCAG 2.0 Guidelines</h2></button>
             <p>
             <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
@@ -336,7 +353,7 @@
 
 
           <h1><a name="general"></a>General</h1>
-            <div class="line-separator"></div>
+          <div class="line-separator"></div>
           <h2><a name="buttons"></a>Buttons</h2>
           <ul>
             <li>
@@ -381,6 +398,10 @@
           <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
           <br>
           <br>
+          <ol>
+            <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all">Non-text Content</a></li>
+          </ol>
+
           <div class="line-separator"></div>
           <h2><a name="colors"></a>Colors</h2>
           <ul>
@@ -423,9 +444,123 @@
             <div class="square gallerySquare"></div>
             <div class="square alabasterSquare"></div>
             <div class="square whiteSquare"></div>
-
-
           </div>
+
+          <div class="line-separator"></div>
+          <h2><a name="linkfocus"></a>Link Focus</h2>
+          <ul>
+            <li>
+              Do not set your site's link focus to <code>outline: none</code>. Never. Ever.
+            </li>
+            <li>
+              If you have multiple form fields on your site or you see the dreaded outline: none in your base code, you can reset the browser defaults by adding the code:
+              <pre><code>
+                a:focus {
+                  outline: auto 2px Highlight; // for non-webkit browsers
+                  outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+                }
+              </code></pre>
+            </li>
+            <li>
+              Of course you can create your own focus styles to match your theme or to make the default browser styles more prominent, just make sure they are visible by tabbing and obvious to your users.
+            </li>
+          </ul>
+
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <a href="#">Hey! I am a cool. focusable link</a>
+          <pre><code>
+            &lt;section class="link-focus-section"&gt;
+              &lt;a href="#"&gt;Hey! I'm a cool, focusable link&lt;/a&gt;
+            &lt;/section&gt;
+          </code></pre>
+
+          <div class="line-separator"></div>
+          <h2><a name="readmorelinks"></a>Read More Links</h2>
+          <ul>
+            <li>
+              Add id selectors to titles and use <code>aria-labelledby=""</code> to link to the title text (Example #1).
+            </li>
+            <li>
+              Add decriptive text with <code>aria-label=""</code> directly in the link (Example #2).
+            </li>
+            <li>
+              Use the class <code>visuallyhidden</code> to visually hide more information about the link (Example #3).
+            </li>
+            <li>
+              Turn read more links into buttons, when you can, since they allow for more labeling options.
+            </li>
+          </ul>
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs">Link Purpose (In Context)</a>
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-link">Link Purpose (Link Only)</a>
+
+          <div class="line-separator"></div>
+          <h2><a name="skiplinks"></a>Skip Links</h2>
+          <ul>
+            <li>
+              Provide ways for users to skip to important sections of your website. This will help users using screenreaders navigate your site easier and more efficiently.
+            </li>
+            <li>
+              There is no real theming rule when it comes to styling your skip links, as such a lot of websites tend to hide them with <code>class="visuallyhidden"</code>. For skip links, it is more important to include the markup in the first place.
+            </li>
+            <li>
+              Examples of the different types of "skip" links include:
+            </li>
+            <pre><code>
+              Skip to content
+              Skip to search
+              Skip to bottom nav
+              Skip to top navbar
+              Skip to main menu
+              Skip to anything, really
+            </code></pre>
+          </ul>
+
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip">Bypass Blocks</a>
+
+          <div class="line-separator"></div>
+          <h2><a name="typography"></a>Typography</h2>
+          <ul>
+            <li>
+              Use real text rather than text within graphics.
+            </li>
+            <li>
+              Select basic, simple, easily-readable fonts and use a limited number of fonts.
+            </li>
+            <li>
+              Avoid small font sizes and use relative units for font size (ems or rems).
+            </li>
+            <li>
+              Limit the use of font variations such as bold, italics, and ALL CAPITAL LETTERS (caps are similar to screaming to screenreaders).
+            </li>
+            <li>
+              Don't rely only on the appearance of the font (color, shape, font variation, placement, etc.) to convey meaning.
+            </li>
+            <li>
+              Avoid blinking or moving text.
+            </li>
+          </ul>
+
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color">Use of Color</a>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">Contrast (Minimum)</a>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale">Resize Text</a>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation">Images of Text</a>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation">Visual Presentation</a>
+
+          <h3>Base</h3>
+          <p><em>Verdana Italic</em></p>
+          <p><strong>Verdana Bold</strong></p>
+          <p>Verdana Medium</p>
+          <p><em><strong>Verdana Bold Italic</strong></em></p>
+
+
+
+
       </main>
 
     </div>
