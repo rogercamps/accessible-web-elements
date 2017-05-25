@@ -35,8 +35,8 @@
 
             <li><span>4</span>Media</li>
               <ul class="sidebarBulletPoint">
-                <li><span>4.1</span>Images</li>
-                <li><span>4.2</span>Site Logo</li>
+                <li><a href="#images"><span>4.1</span>Images</a></li>
+                <li><a href="#sitelogo"><span>4.2</span>Site Logo</a></li>
               </ul>
 
             <li><a href="#navigation"><span>5</span>Navigation</a></li>
@@ -814,19 +814,19 @@
           <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
             <br>
             <p>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><strong>1.4.1 Use of Color</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><strong>Use of Color</strong></a>
             - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast"><strong>1.4.3 Contrast (Minimum)</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast"><strong>Contrast (Minimum)</strong></a>
             - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale"><strong>1.4.4 Resize Text</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale"><strong>Resize Text</strong></a>
             - Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA)
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>1.4.5 Images of Text</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>
             - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation"><strong>1.4.8 Visual Presentation</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation"><strong>Visual Presentation</strong></a>
             - For the visual presentation of blocks of text, a mechanism is available to achieve the following (see WCAG guidelines for more info). (Level AAA)
             </p>
           </div>
@@ -837,6 +837,82 @@
           <p>Verdana Medium</p>
           <p><em><strong>Verdana Bold Italic</strong></em></p>
 
+          <div class="line-separator"></div>
+          <div class="line-separator"></div>
+
+          <h1><a name="media"></a>Media</h1>
+
+          <div class="line-separator"></div>
+
+          <div class="images">
+          <h2><a name="images"></a>Images</h2>
+          <ul>
+            <li>
+              Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a <em>descriptive</em> alternative for that image.
+            </li>
+            <li>
+              If the image is decorative or redundant to adjacent text, set <code>alt=""</code>, which conveys to assistive technology users that the image isn’t necessary for understanding the page.
+            </li>
+            <li>
+              Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+            </li>
+            <li>
+              Make sure any text in images of text is at least 14 points and has good contrast with the background.
+            </li>
+          </ul>
+
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv"><strong>Non-text Content</strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
+          <br>
+          <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast"><strong>Contrast: Minimum</strong></a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
+          <br>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>- If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
+
+          <div class="images"><img src="./assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background"></div>
+
+          <div class="line-separator"></div>
+
+          <div class="Site Logo">
+          <h2><a name="sitelogo"></a>Site Logo</h2>
+
+          <ul>
+            <li>
+              Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a descriptive alternative for that image.
+            </li>
+            <li>
+              Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+            </li>
+            <li>
+              Make sure any text in images of text is at least 14 points and has good contrast with the background.
+            </li>
+            <li>
+              When using images as links, one must consider how the <code>alt</code> text will be read back to users of assistive technology. The following examples showcase appropriate <code>alt</code> text for logos when used as a link, or as a stand alone image asset.
+            </li>
+          </ul>
+
+          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+          <br>
+
+          <a href="http://accessibleicon.org/"><strong>The Accessible Icon Project</strong></a>
+          <br>
+          <a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility"><strong>Hiding Content</strong></a>
+
+          <h3>Example #1: Logo as a link</h3>
+          <a href="https://en.wikipedia.org/wiki/Web_accessibility">
+          <img class="imagelink" src="./assets/blueicon.jpg" alt="logo as a link to accessibility wikipedia page">
+          </a>
+          <br>
+          <h3>Example #2: Logo as a link with visible link text</h3>
+          <a href="https://en.wikipedia.org/wiki/Web_accessibility">
+          <img class="imagelink" src="./assets/blackicon.jpg" alt="logo as a link to accessibility wikipedia page">
+          <br>
+          Accessible Icon Project
+          </a>
+          <br>
+          <br>
 
           <div class="line-separator"></div>
           <div class="line-separator"></div>
