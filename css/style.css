@@ -168,13 +168,35 @@ pre code {
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.breadcrumb .breadcrumb-item {
+  float: left;
+  list-style: none;
+}
+
+.breadcrumb .slash::after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: normal;
+  content: ' / ';
+}
+
+.tab {
+  margin-left: 40px;
+}
+
+.line-separator-light {
+  height:0.5px;
+  border-bottom:1px solid #f1e9e9;
 }
