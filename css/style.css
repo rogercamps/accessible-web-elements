@@ -211,3 +211,9 @@ pre code {
     width: 100%;
     overflow: hidden;
 }
+
+.imagelink {
+  height: auto;
+  max-width: 215px;
+  border: 0;
+}
