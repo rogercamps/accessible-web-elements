@@ -33,7 +33,7 @@
                 <li><a href="#typography"><span>3.6</span>Typography</a></li>
               </ul>
 
-            <li><span>4</span>Media</li>
+            <li><a href="#media"><span>4</span>Media</a></li>
               <ul class="sidebarBulletPoint">
                 <li><a href="#images"><span>4.1</span>Images</a></li>
                 <li><a href="#sitelogo"><span>4.2</span>Site Logo</a></li>
@@ -46,10 +46,10 @@
                 <li><a href="#pagination"><span>5.3</span>Pagination</a></li>
               </ul>
 
-            <li><span>6</span>Structure</li>
+            <li><a href="#structure"><span>6</span>Structure</a></li>
               <ul class="sidebarBulletPoint">
-                <li><span>6.1</span>Headings</li>
-                <li><span>6.2</span>Tables</li>
+                <li><a href="#headings"><span>6.1</span>Headings</a></li>
+                <li><a href="#tables"><span>6.2</span>Tables</a></li>
               </ul>
           </ul>
         </nav>
@@ -852,75 +852,77 @@
 
           <div class="line-separator"></div>
 
-          <div class="images">
-          <h2><a name="images"></a>Images</h2>
-          <ul>
-            <li>
-              Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a <em>descriptive</em> alternative for that image.
-            </li>
-            <li>
-              If the image is decorative or redundant to adjacent text, set <code>alt=""</code>, which conveys to assistive technology users that the image isn’t necessary for understanding the page.
-            </li>
-            <li>
-              Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
-            </li>
-            <li>
-              Make sure any text in images of text is at least 14 points and has good contrast with the background.
-            </li>
-          </ul>
+          <div class="images-main">
+            <h2><a name="images"></a>Images</h2>
+            <ul>
+              <li>
+                Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a <em>descriptive</em> alternative for that image.
+              </li>
+              <li>
+                If the image is decorative or redundant to adjacent text, set <code>alt=""</code>, which conveys to assistive technology users that the image isn’t necessary for understanding the page.
+              </li>
+              <li>
+                Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+              </li>
+              <li>
+                Make sure any text in images of text is at least 14 points and has good contrast with the background.
+              </li>
+            </ul>
 
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-          <br>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv"><strong>Non-text Content</strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
-          <br>
-          <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
-          <br>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast"><strong>Contrast: Minimum</strong></a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
-          <br>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>- If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
+            <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv"><strong>Non-text Content</strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
+            <br>
+            <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast"><strong>Contrast: Minimum</strong></a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>- If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
 
-          <div class="images"><img src="./assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background"></div>
+            <div class="images"><img src="./assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background"></div>
+          </div>
 
           <div class="line-separator"></div>
 
           <div class="Site Logo">
-          <h2><a name="sitelogo"></a>Site Logo</h2>
+            <h2><a name="sitelogo"></a>Site Logo</h2>
 
-          <ul>
-            <li>
-              Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a descriptive alternative for that image.
-            </li>
-            <li>
-              Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
-            </li>
-            <li>
-              Make sure any text in images of text is at least 14 points and has good contrast with the background.
-            </li>
-            <li>
-              When using images as links, one must consider how the <code>alt</code> text will be read back to users of assistive technology. The following examples showcase appropriate <code>alt</code> text for logos when used as a link, or as a stand alone image asset.
-            </li>
-          </ul>
+            <ul>
+              <li>
+                Every <code>&lt;img&gt;</code> you add to your site needs to have an <code>alt</code> attribute. If the image is informational, set the alt equal to a descriptive alternative for that image.
+              </li>
+              <li>
+                Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+              </li>
+              <li>
+                Make sure any text in images of text is at least 14 points and has good contrast with the background.
+              </li>
+              <li>
+                When using images as links, one must consider how the <code>alt</code> text will be read back to users of assistive technology. The following examples showcase appropriate <code>alt</code> text for logos when used as a link, or as a stand alone image asset.
+              </li>
+            </ul>
 
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-          <br>
+            <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
+            <br>
 
-          <a href="http://accessibleicon.org/"><strong>The Accessible Icon Project</strong></a>
-          <br>
-          <a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility"><strong>Hiding Content</strong></a>
+            <a href="http://accessibleicon.org/"><strong>The Accessible Icon Project</strong></a>
+            <br>
+            <a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility"><strong>Hiding Content</strong></a>
 
-          <h3>Example #1: Logo as a link</h3>
-          <a href="https://en.wikipedia.org/wiki/Web_accessibility">
-          <img class="imagelink" src="./assets/blueicon.jpg" alt="logo as a link to accessibility wikipedia page">
-          </a>
-          <br>
-          <h3>Example #2: Logo as a link with visible link text</h3>
-          <a href="https://en.wikipedia.org/wiki/Web_accessibility">
-          <img class="imagelink" src="./assets/blackicon.jpg" alt="logo as a link to accessibility wikipedia page">
-          <br>
-          Accessible Icon Project
-          </a>
-          <br>
-          <br>
+            <h3>Example #1: Logo as a link</h3>
+            <a href="https://en.wikipedia.org/wiki/Web_accessibility">
+            <img class="imagelink" src="./assets/blueicon.jpg" alt="logo as a link to accessibility wikipedia page">
+            </a>
+            <br>
+            <h3>Example #2: Logo as a link with visible link text</h3>
+            <a href="https://en.wikipedia.org/wiki/Web_accessibility">
+            <img class="imagelink" src="./assets/blackicon.jpg" alt="logo as a link to accessibility wikipedia page">
+            <br>
+            Accessible Icon Project
+            </a>
+            <br>
+            <br>
+          </div>
 
           <div class="line-separator"></div>
           <div class="line-separator"></div>
@@ -1162,8 +1164,9 @@
               <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
               - Information about the user's location within a set of Web pages is available. (Level AAA)
             </div>
-            <div class="line-separator-light"></div>
           </div>
+          <div class="line-separator-light"></div>
+          <br>
           <section class="pagination-section">
             <nav aria-label="pagination">
               <div class="pagination">
@@ -1244,6 +1247,414 @@
 
             <h6 class="structureheadings">but I carry on.</h6>
 
+          </div>
+
+          <div class="line-separator"></div>
+
+          <div class="tables">
+            <h2><a name="tables"></a>Tables</h2>
+            <ul>
+              <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
+              <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope="row"&gt;</code>. For header columns use <code>&lt;th scope="col"&gt;</code></li>
+              <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+            </ul>
+            <div>
+              <button><h2>Resources</h2></button>
+              <ul>
+                <li><a href="https://www.w3.org/WAI/tutorials/tables/"><strong>Web Accessibility Tutorials - Table Concepts</strong></a></li>
+              </ul>
+            <br>
+            </div>
+            <div>
+              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <p>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+              </p>
+              <br>
+            </div>
+            <div class="line-separator-light"></div>
+
+            <section class="tables-section">
+              <h3>Option #1: Table with one header</h3>
+              <table class="tables" cellspacing="0" summary="Information for surprise party">
+              	<tr>
+              		<th>Date</th>
+              		<th>Event</th>
+              		<th>Venue</th>
+              	</tr>
+              	<tr>
+              		<td>3 February</td>
+              		<td>Surprise Party</td>
+              		<td>Party Town USA</td>
+              	</tr>
+              </table>
+              <br>
+              <div class="line-separator-light"></div>
+              <section class="tables-section2">
+                <h3>Option #2: Table with two headers and caption</h3>
+                <table class="tables" cellspacing="0">
+                  <caption>Color Names in Multiple Languages</caption>
+                  <tr class="headers">
+                    <th scope="col">Color</th>
+                    <th scope="col">French</th>
+                    <th scope="col">German</th>
+                    <th scope="col">Italian</th>
+                    <th scope="col">Portuguese</th>
+                    <th scope="col">Spanish</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Red</th>
+                    <td>rouge</td>
+                    <td>rot</td>
+                    <td>rosso</td>
+                    <td>vermelho</td>
+                    <td>rojo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Orange</th>
+                    <td>orange</td>
+                    <td>orange</td>
+                    <td>arancione</td>
+                    <td>laranja</td>
+                    <td>anaranjado</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Yellow</th>
+                    <td>jaune</td>
+                    <td>gelb</td>
+                    <td>giallo</td>
+                    <td>amarelo</td>
+                    <td>amarillo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Green</th>
+                    <td>vert</td>
+                    <td>grün</td>
+                    <td>verde</td>
+                    <td>verde</td>
+                    <td>verde</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Blue</th>
+                    <td>bleu</td>
+                    <td>blau</td>
+                    <td>blu</td>
+                    <td>azul</td>
+                    <td>azul</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Purple</th>
+                    <td>pourpre</td>
+                    <td>lila</td>
+                    <td>porpora</td>
+                    <td>roxo</td>
+                    <td>morado</td>
+                  </tr>
+                </table>
+              </section>
+              <br>
+              <div class="line-separator-light"></div>
+              <section class="tables-section3">
+                <h3>Option #3: Complex Table</h3>
+                <table class="tables" cellspacing="0">
+                	<tbody>
+                		<tr class="headers">
+                			<th id="co1" headers="blank">Kingdom</th>
+                			<th id="co2" headers="blank">Phylum</th>
+                			<th id="co3" headers="blank">Class</th>
+                			<th id="co4" headers="blank">Order</th>
+                		</tr>
+                		<tr>
+                			<td headers="co1">Animalia</td>
+                			<td headers="co2">Chordata</td>
+                			<td headers="co3">Mammalia</td>
+                			<td headers="co4">Carnivora</td>
+                		</tr>
+                		<tr>
+                			<td headers="co1">Animalia</td>
+                			<td headers="co2">Arthropoda</td>
+                			<td headers="co3">Insecta</td>
+                			<td headers="co4">Lepidoptera</td>
+                		</tr>
+                		<tr>
+                			<td headers="co1">Animalia</td>
+                			<td headers="co2">Echinodermata</td>
+                			<td headers="co3">Asteroidea</td>
+                			<td headers="co4">Forcipulatida</td>
+                		</tr>
+              		  <tr class="headers">
+                      <th id="co5" headers="blank">Family</th>
+                			<th id="co6" headers="blank">Genus</th>
+                			<th id="co7" headers="blank">Species</th>
+                			<th id="co8" headers="blank">Common</th>
+                		</tr>
+                		<tr>
+                			<td headers="co5">Felidae</td>
+                			<td headers="co6">Panthera</td>
+                			<td headers="co7">Panthera tigris</td>
+                			<td headers="co8">Tiger</td>
+                		</tr>
+                		<tr>
+                			<td headers="co5">Danaidae</td>
+                			<td headers="co6">Dannaus</td>
+                			<td headers="co7">Plexippus</td>
+                			<td headers="co8">Monarch Butterfly</td>
+                		</tr>
+                		<tr>
+                			<td headers="co5">Asteriidae</td>
+                			<td headers="co6">Asterias</td>
+                			<td headers="co7">Asterias amurensis</td>
+                			<td headers="co8">Northern Pacific seastar</td>
+                		</tr>
+                	</tbody>
+                </table>
+              </section>
+              <br>
+              <div class="line-separator-light"></div>
+              <section>
+                <h3>Option #4: Responsive Table</h3>
+                <table class="responsive-table" id="responsive-tableID">
+                  <thead>
+                    <tr align="center">
+                      <th class="responsive">House Side</th>
+                      <th class="responsive">House Address</th>
+                      <th class="responsive">Other</th>
+                      <th class="responsive">Other Address</th>
+                      <th class="responsive">Senate Side</th>
+                      <th class="responsive">Senate Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="responsive">Rayburn House Office Building</td>
+                      <td class="responsive">50 Independence Ave, SW Washington, DC 20515</td>
+                      <td class="responsive">Library of Congress</td>
+                      <td class="responsive">101 Independence Ave SE, Washington, DC 20540</td>
+                      <td class="responsive">Russell Senate Office Building</td>
+                      <td class="responsive">2 Constitution Ave NE, Washington, DC 20002</td>
+                    </tr>
+                    <tr>
+                      <td class="responsive">Longworth House Office Building</td>
+                      <td class="responsive">15 Independence Ave, SW Washington, DC 20515</td>
+                      <td class="responsive">Supreme Court</td>
+                      <td class="responsive">1 First Street, NE Washington, DC 20543</td>
+                      <td class="responsive">Dirksen Senate Office Building</td>
+                      <td class="responsive">100 Constitution Ave NE Washington, DC 20002</td>
+                    </tr>
+                    <tr>
+                      <td class="responsive">Cannon House Office Building</td>
+                      <td class="responsive">25 Independence Ave, SE Washington, DC 20003</td>
+                      <td class="responsive">Capitol Visitors Center</td>
+                      <td class="responsive">First &amp; East Capitol St SE, Washington, DC 20004</td>
+                      <td class="responsive">Hart Senate Office Building</td>
+                      <td class="responsive">150 Constitution Ave NE Washington, DC 20510</td>
+                    </tr>
+                    <tr>
+                      <td class="responsive">Capitol South Metro</td>
+                      <td class="responsive">307 First Street SE Washington, DC 20003</td>
+                      <td class="responsive">Federal Center Metro</td>
+                      <td class="responsive">401 3rd Street SW Washington, DC 20024</td>
+                      <td class="responsive">Union Station Metro</td>
+                      <td class="responsive">701 First St. NE Washington, DC 20002</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+            <br>
+            <button><h2>Show Markup Example</h2></button>
+            <br>
+            <pre>
+              <code>
+                &lt;section class="tables-section"&gt;
+                  &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
+                  &lt;table class="tables" cellspacing="0" summary="Information for surprise party"&gt;
+                  	&lt;tr&gt;
+                  		&lt;th&gt;Date&lt;/th&gt;
+                  		&lt;th&gt;Event&lt;/th&gt;
+                  		&lt;th&gt;Venue&lt;/th&gt;
+                  	&lt;/tr&gt;
+                  	&lt;tr&gt;
+                  		&lt;td&gt;3 February&lt;/td&gt;
+                  		&lt;td&gt;Surprise Party&lt;/td&gt;
+                  		&lt;td&gt;Party Town USA&lt;/td&gt;
+                  	&lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/section&gt;
+                &lt;section class="tables-section2"&gt;
+                  &lt;div class="break"&gt;&lt;/div&gt;
+                  &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
+                  &lt;table class="tables" cellspacing="0"&gt;
+                    &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
+                    &lt;tr class="headers"&gt;
+                      &lt;th scope="col"&gt;Color&lt;/th&gt;
+                      &lt;th scope="col"&gt;French&lt;/th&gt;
+                      &lt;th scope="col"&gt;German&lt;/th&gt;
+                      &lt;th scope="col"&gt;Italian&lt;/th&gt;
+                      &lt;th scope="col"&gt;Portuguese&lt;/th&gt;
+                      &lt;th scope="col"&gt;Spanish&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Red&lt;/th&gt;
+                      &lt;td&gt;rouge&lt;/td&gt;
+                      &lt;td&gt;rot&lt;/td&gt;
+                      &lt;td&gt;rosso&lt;/td&gt;
+                      &lt;td&gt;vermelho&lt;/td&gt;
+                      &lt;td&gt;rojo&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Orange&lt;/th&gt;
+                      &lt;td&gt;orange&lt;/td&gt;
+                      &lt;td&gt;orange&lt;/td&gt;
+                      &lt;td&gt;arancione&lt;/td&gt;
+                      &lt;td&gt;laranja&lt;/td&gt;
+                      &lt;td&gt;anaranjado&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Yellow&lt;/th&gt;
+                      &lt;td&gt;jaune&lt;/td&gt;
+                      &lt;td&gt;gelb&lt;/td&gt;
+                      &lt;td&gt;giallo&lt;/td&gt;
+                      &lt;td&gt;amarelo&lt;/td&gt;
+                      &lt;td&gt;amarillo&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Green&lt;/th&gt;
+                      &lt;td&gt;vert&lt;/td&gt;
+                      &lt;td&gt;grün&lt;/td&gt;
+                      &lt;td&gt;verde&lt;/td&gt;
+                      &lt;td&gt;verde&lt;/td&gt;
+                      &lt;td&gt;verde&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Blue&lt;/th&gt;
+                      &lt;td&gt;bleu&lt;/td&gt;
+                      &lt;td&gt;blau&lt;/td&gt;
+                      &lt;td&gt;blu&lt;/td&gt;
+                      &lt;td&gt;azul&lt;/td&gt;
+                      &lt;td&gt;azul&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th scope="row"&gt;Purple&lt;/th&gt;
+                      &lt;td&gt;pourpre&lt;/td&gt;
+                      &lt;td&gt;lila&lt;/td&gt;
+                      &lt;td&gt;porpora&lt;/td&gt;
+                      &lt;td&gt;roxo&lt;/td&gt;
+                      &lt;td&gt;morado&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/section&gt;
+                &lt;section class="tables-section3"&gt;
+                  &lt;div class="break"&gt;&lt;/div&gt;
+                  &lt;h3&gt;Option #3: Complex Table&lt;/h3&gt;
+                  &lt;table class="tables" cellspacing="0"&gt;
+                  	&lt;tbody&gt;
+                  		&lt;tr class="headers"&gt;
+                  			&lt;th id="co1" headers="blank"&gt;Kingdom&lt;/th&gt;
+                  			&lt;th id="co2" headers="blank"&gt;Phylum&lt;/th&gt;
+                  			&lt;th id="co3" headers="blank"&gt;Class&lt;/th&gt;
+                  			&lt;th id="co4" headers="blank"&gt;Order&lt;/th&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                  			&lt;td headers="co2"&gt;Chordata&lt;/td&gt;
+                  			&lt;td headers="co3"&gt;Mammalia&lt;/td&gt;
+                  			&lt;td headers="co4"&gt;Carnivora&lt;/td&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                  			&lt;td headers="co2"&gt;Arthropoda&lt;/td&gt;
+                  			&lt;td headers="co3"&gt;Insecta&lt;/td&gt;
+                  			&lt;td headers="co4"&gt;Lepidoptera&lt;/td&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                  			&lt;td headers="co2"&gt;Echinodermata&lt;/td&gt;
+                  			&lt;td headers="co3"&gt;Asteroidea&lt;/td&gt;
+                  			&lt;td headers="co4"&gt;Forcipulatida&lt;/td&gt;
+                  		&lt;/tr&gt;
+                		  &lt;tr class="headers"&gt;
+                        &lt;th id="co5" headers="blank"&gt;Family&lt;/th&gt;
+                  			&lt;th id="co6" headers="blank"&gt;Genus&lt;/th&gt;
+                  			&lt;th id="co7" headers="blank"&gt;Species&lt;/th&gt;
+                  			&lt;th id="co8" headers="blank"&gt;Common&lt;/th&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co5"&gt;Felidae&lt;/td&gt;
+                  			&lt;td headers="co6"&gt;Panthera&lt;/td&gt;
+                  			&lt;td headers="co7"&gt;Panthera tigris&lt;/td&gt;
+                  			&lt;td headers="co8"&gt;Tiger&lt;/td&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co5"&gt;Danaidae&lt;/td&gt;
+                  			&lt;td headers="co6"&gt;Dannaus&lt;/td&gt;
+                  			&lt;td headers="co7"&gt;Plexippus&lt;/td&gt;
+                  			&lt;td headers="co8"&gt;Monarch Butterfly&lt;/td&gt;
+                  		&lt;/tr&gt;
+                  		&lt;tr&gt;
+                  			&lt;td headers="co5"&gt;Asteriidae&lt;/td&gt;
+                  			&lt;td headers="co6"&gt;Asterias&lt;/td&gt;
+                  			&lt;td headers="co7"&gt;Asterias amurensis&lt;/td&gt;
+                  			&lt;td headers="co8"&gt;Northern Pacific seastar&lt;/td&gt;
+                  		&lt;/tr&gt;
+                  	&lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/section&gt;
+                &lt;section&gt;
+                  &lt;div class="break"&gt;&lt;/div&gt;
+                  &lt;h3&gt;Option #4: Responsive Table&lt;/h3&gt;
+                  &lt;table class="responsive-table" id="responsive-tableID"&gt;
+                    &lt;thead&gt;
+                      &lt;tr align="center"&gt;
+                        &lt;th class="responsive"&gt;House Side&lt;/th&gt;
+                        &lt;th class="responsive"&gt;House Address&lt;/th&gt;
+                        &lt;th class="responsive"&gt;Other&lt;/th&gt;
+                        &lt;th class="responsive"&gt;Other Address&lt;/th&gt;
+                        &lt;th class="responsive"&gt;Senate Side&lt;/th&gt;
+                        &lt;th class="responsive"&gt;Senate Address&lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class="responsive"&gt;Rayburn House Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Library of Congress&lt;/td&gt;
+                        &lt;td class="responsive"&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Russell Senate Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="responsive"&gt;Longworth House Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Supreme Court&lt;/td&gt;
+                        &lt;td class="responsive"&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Dirksen Senate Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="responsive"&gt;Cannon House Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Capitol Visitors Center&lt;/td&gt;
+                        &lt;td class="responsive"&gt;First &amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Hart Senate Office Building&lt;/td&gt;
+                        &lt;td class="responsive"&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="responsive"&gt;Capitol South Metro&lt;/td&gt;
+                        &lt;td class="responsive"&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Federal Center Metro&lt;/td&gt;
+                        &lt;td class="responsive"&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
+                        &lt;td class="responsive"&gt;Union Station Metro&lt;/td&gt;
+                        &lt;td class="responsive"&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/section&gt;
+              </code>
+            </pre>
+            <br>
+          </div>
       </main>
     </div>
   </body>
