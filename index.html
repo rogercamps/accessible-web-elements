@@ -1133,6 +1133,67 @@
           <div class="line-separator"></div>
           <br>
 
+          <div class="pagination-main">
+            <h2><a name="pagination"></a>Pagination</h2>
+            <ul>
+              <li>Place the pager in a <code>&lt;nav&gt;</code> element when you can.</li>
+              <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role="navigation"</code> to the markup. Note: this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
+              <li>The markup includes an <code>aria-label="pagination"</code> to describe the type of navigation.</li>
+              <li>Add <code>aria-current="page"</code> to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
+            </ul>
+            <div>
+              <button><h2>Resources</h2></button>
+              <ul>
+                <li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current"><strong>Accessible Rich Internet Applications (WAI-ARIA) 1.1</strong></a></li>
+                <li><a href="https://tink.uk/using-the-aria-current-attribute/"><strong>Using the aria-current attribute</strong></a></li>
+              </ul>
+            <br>
+            <div>
+              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <p>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
+              - Information about the user's location within a set of Web pages is available. (Level AAA)
+            </div>
+            <div class="line-separator-light"></div>
+          </div>
+          <section class="pagination-section">
+            <nav aria-label="pagination">
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a>
+                <a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a>
+                <a class="page-link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a>
+                <a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a>
+                <a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a>
+                <a class="page-link" href="#"><span class="visuallyhidden">page </span>6</a>
+                <a href="#">&raquo;</a>
+              </div>
+            </nav>
+          </section>
+          <br>
+          <button><h2>Show Markup Example</h2></button>
+          <br>
+          <pre>
+            <code>
+              &lt;section class="pagination-section"&gt;
+                &lt;nav aria-label="pagination"&gt;
+                  &lt;div class="pagination"&gt;
+                    &lt;a href="#"&gt;&laquo;&lt;/a&gt;
+                    &lt;a class="page-link" href="#"&gt;&lt;span class="visuallyhidden"&gt;page &lt;/span&gt;1&lt;/a&gt;
+                    &lt;a class="page-link" href="#"&gt;&lt;span class="visuallyhidden"&gt;page &lt;/span&gt;2&lt;/a&gt;
+                    &lt;a class="page-link" href="#" aria-current="page"&gt;&lt;span class="visuallyhidden"&gt;page&lt;/span&gt;3&lt;/a&gt;
+                    &lt;a class="page-link" href="#"&gt;&lt;span class="visuallyhidden"&gt;page &lt;/span&gt;4&lt;/a&gt;
+                    &lt;a class="page-link" href="#"&gt;&lt;span class="visuallyhidden"&gt;page &lt;/span&gt;5&lt;/a&gt;
+                    &lt;a class="page-link" href="#"&gt;&lt;span class="visuallyhidden"&gt;page &lt;/span&gt;6&lt;/a&gt;
+                    &lt;a href="#"&gt;&raquo;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/nav&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+        </div>
+        <div class="line-separator"></div>
+        <div class="line-separator"></div>
       </main>
     </div>
   </body>
