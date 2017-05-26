@@ -5,12 +5,12 @@
 }
 
 .container {
-  display: -webkit-flex;
   display: absolute;
   height: 100%;
   font-family: verdana;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 100%;
 }
 
 .sidebar {
@@ -227,7 +227,6 @@ pre code {
   color: black;
 }
 
-
 table {
   display: table;
   border-collapse: separate;
@@ -263,5 +262,10 @@ tr {
 
 .tables, .responsive-table {
   border-collapse: collapse;
-  width: 100%;
+  width: 60%;
+}
+
+.guidelines, .resources {
+  color: red;
+  text-decoration: underline;;
 }

@@ -91,7 +91,8 @@
           <div class="line-separator"></div>
           <div class="line-separator"></div>
           <h1><a name="forms"></a>Forms</h1>
-            <div class="line-separator"></div>
+          <div class="line-separator"></div>
+
           <div class="checkboxes">
 
             <h2><a name="checkboxes"></a>Checkboxes</h2>
@@ -110,22 +111,22 @@
               The <code>&lt;span class="visuallyhidden"&gt;</code> content in the second example is not necessary information to choose an option. It is important to point out that in some cases, it is very useful to add additional information. However, in this case, it is meant as a joke for people using screen-readers. And why not have a joke visible only to people using screen-readers? How many times do we hide content from them?
             </blockquote>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
-              - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
-              - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
-              - Headings and labels describe topic or purpose. (Level AA)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
+                - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
+                - Headings and labels describe topic or purpose. (Level AA)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
               </p>
             </div>
             <div class="line-separator-light"></div>
@@ -171,7 +172,7 @@
               </div>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <h3>Markup Example:</h3>
             <br>
             <pre>
               <code>
@@ -238,7 +239,7 @@
               The <code>&lt;span class="visuallyhidden"&gt;</code> content in the second example is not necessary information to choose an option. It is important to point out that in some cases, it is very useful to add additional information. However, in this case, it is meant as a joke for people using screen-readers. And why not have a joke visible only to people using screen-readers? How many times do we hide content from them?
             </blockquote>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
               <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
               - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
@@ -268,7 +269,6 @@
                   <label for="night">Night</label>
                   <input id="poutine" type="radio" name="day" value="poutine"/>
                   <label for="poutine">Anytime I'm eating poutine</label>
-
                 </fieldset>
               </div>
               <div class="groupOption2">
@@ -292,7 +292,7 @@
               </div>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <h3>Markup Example:</h3>
             <br>
             <pre>
               <code>
@@ -307,7 +307,6 @@
                       &lt;label for="night"&gt;Night&lt;/label&gt;
                       &lt;input id="poutine" type="radio" name="day" value="poutine"/&gt;
                       &lt;label for="poutine"&gt;Anytime I'm eating poutine&lt;/label&gt;
-
                     &lt;/fieldset&gt;
                   &lt;/div&gt;
                   &lt;div class="groupOption2"&gt;
@@ -342,24 +341,24 @@
               <li>Whenever possible, use the <code>label</code> element to explicitly associate text with form elements. The <code>for</code> attribute of the label must exactly match the id of the form control.</li>
               <li>Some form fields do not need explicit <code>label</code> elements, when next to a button with descriptive text. Ex. search field next to a button labeled search. In these cases you should still have a <code>label</code> in the markup, but you can hide it visually.</li>
               <li>Note that placeholders are not recognized by all assistive technologies, and thus are not adequate replacements for appropriate labeling. Additionally, assistive technologies that <strong>do</strong> announce placeholders will read the placeholder first, then the input's label and then type of input. So be sure not to repeat an input's label as its placeholder, otherwise it will be announced multiple times.</li>
-            <br>
+            </ul>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
-              - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
-              - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
-              - Headings and labels describe topic or purpose. (Level AA)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
+                - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
+                - Headings and labels describe topic or purpose. (Level AA)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
               </p>
             </div>
             <div class="line-separator-light"></div>
@@ -390,7 +389,7 @@
               </div>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <h3>Markup Example:</h3>
             <pre>
               <code>
                 &lt;section class="searchInput-section"&gt;
@@ -433,22 +432,22 @@
             </ul>
             <br>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
-              - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
-              - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
-              - Headings and labels describe topic or purpose. (Level AA)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
+                - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
+                - Headings and labels describe topic or purpose. (Level AA)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
               </p>
             </div>
             <div class="line-separator-light"></div>
@@ -491,7 +490,7 @@
               </div>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <h3>Markup Example:</h3>
             <br>
             <pre>
               <code>
@@ -549,22 +548,22 @@
             </ul>
             <br>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
-              - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
-              - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
-              - Headings and labels describe topic or purpose. (Level AA)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
-              <br>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
-              - Labels or instructions are provided when content requires user input. (Level A)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
+                - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>2.4.6 Headings and Labels</strong></a>
+                - Headings and labels describe topic or purpose. (Level AA)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
+                <br>
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+                - Labels or instructions are provided when content requires user input. (Level A)
               </p>
             </div>
             <div class="line-separator-light"></div>
@@ -587,7 +586,7 @@
               </form>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <h3>Markup Example:</h3>
             <br>
             <pre>
               <code>
@@ -637,7 +636,7 @@
             </li>
           </ul>
 
-          <button type="button" name="button"><h2>Resources</h2></button>
+          <h3 class="resources">Resources</h3>
           <ul>
             <li>
               <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role">Using the button role</a>
@@ -650,9 +649,7 @@
             </li>
           </ul>
 
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-          <br>
-          <br>
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
           <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all"><strong>1.1.1 Non-text Content</strong></a>
           - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
 
@@ -669,7 +666,7 @@
             </li>
           </ul>
 
-          <button type="button" name="button"><h2>Resources</h2></button>
+          <h3 class="resources">Resources</h3>
           <ul>
             <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator">Color Blindness Simulator</a>- see how your site looks to a person with one of the various forms of color blindness</li>
             <li><a href="http://colorsafe.co/">Color Safe</a>accessible color palettes based on WCAG Guidelines</li>
@@ -677,7 +674,15 @@
             <li><a href="https://randoma11y.com/#/?_k=yoxokf">Random A11y Color Palettes</a>- project to try and curate beautiful, random color palettes that are a11y friendly</li>
           </ul>
 
-          <h2>WCAG 2.0 Guidelines</h2>
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+          <p>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><strong>1.4.1 Use of Color</strong></a>
+            - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)
+            <br>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast"><strong>1.4.3 Contrast (Minimum)</strong></a>
+            - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)
+          </p>
+
           <div class="line-separator-light"></div>
           <div class="squares">
             <h4>Primary</h4>
@@ -724,17 +729,23 @@
             </li>
           </ul>
 
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+          <p>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all"><strong>2.4.7 Focus Visible</strong></a>
+            - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)
+          </p>
+          <br>
           <div class="line-separator-light"></div>
           <br>
-          <a href="#">Hey! I am a cool. focusable link</a>
-          <pre><code>
-            &lt;section class="link-focus-section"&gt;
-              &lt;a href="#"&gt;Hey! I'm a cool, focusable link&lt;/a&gt;
-            &lt;/section&gt;
-          </code></pre>
-          <br>
+          <a href="#">Hey! I am a cool, focusable link</a>
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;section class="link-focus-section"&gt;
+                &lt;a href="#"&gt;Hey! I'm a cool, focusable link&lt;/a&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
           <br>
 
           <div class="line-separator"></div>
@@ -753,17 +764,62 @@
               Turn read more links into buttons, when you can, since they allow for more labeling options.
             </li>
           </ul>
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-          <br>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs">
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+          <p>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs">
+            <strong>2.4.4 Link Purpose (In Context)</strong></a>: The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)
             <br>
-            <strong>Link Purpose (In Context)</strong></a>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-link">
+            <strong>2.4.9 Link Purpose (Link Only)</strong></a>: A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. (Level AAA)
+            </p>
           <br>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-link">
-            <br>
-            <strong>Link Purpose (Link Only)</strong></a>
+          <section class="read-more-section">
+            <h3>Example #1: Using aria-labelledby</h3>
+            <h4 id="headline" class="bold">Storms Hit East Coast</h4>
+            <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="#" aria-labelledby="headline" class="read-more">Read More</a></p>
+            <div class="line-separator-light"></div>
+            <h3>Example #2: Using aria-label</h3>
+            <h4 class="bold">Black Bears Trapped in Cars</h4>
+            <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="#" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
+            <div class="line-separator-light"></div>
+            <h3>Example #3: Using aria-describedby</h3>
+            <h4 class="bold" id="info">Can I have a badge?</h4>
+            <p>Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!
+            <p class="visuallyhidden">This is a quote from the 1948 movie The Treasure of the Sierra Madre.</p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
+            <div class="line-separator-light"></div>
+            <h3>Example #4: Using visually hidden text</h3>
+            <h4 class="bold">Mass Hysteria</h4>
+            <p>Fire and brimstone, coming down from the skies. Rivers and seas boiling... Human sacrifice, dogs and cats, living together...
+            <p class="visuallyhidden">This is a quote from the 1984 movie Ghostbusters.</p>
+            <a href="#" class="read-more">Read More<span class="visuallyhidden"> about mass hysteria in relation to movie quotes</span></a></p>
+          </section>
           <br>
-          <br>
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;section class="read-more-section"&gt;
+                &lt;h3&gt;Example #1: Using aria-labelledby&lt;/h3&gt;
+                &lt;h4 id="headline" class="bold"&gt;Storms Hit East Coast&lt;/h4&gt;
+                &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href="#" aria-labelledby="headline" class="read-more"&gt;Read More&lt;/a&gt;&lt;/p&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Example #2: Using aria-label&lt;/h3&gt;
+                &lt;h4 class="bold"&gt;Black Bears Trapped in Cars&lt;/h4&gt;
+                &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href="#" aria-label="Learn more about trapped black bears" class="read-more"&gt;Read More&lt;/a&gt;&lt;/p&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Example #3: Using aria-describedby&lt;/h3&gt;
+                &lt;h4 class="bold" id="info"&gt;Can I have a badge?&lt;/h4&gt;
+                &lt;p&gt;Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!
+                &lt;p class="visuallyhidden"&gt;This is a quote from the 1948 movie The Treasure of the Sierra Madre.&lt;/p&gt;&lt;a href="#" aria-describedby="info" class="read-more"&gt;Read More&lt;/a&gt;&lt;/p&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Example #4: Using visually hidden text&lt;/h3&gt;
+                &lt;h4 class="bold"&gt;Mass Hysteria&lt;/h4&gt;
+                &lt;p&gt;Fire and brimstone, coming down from the skies. Rivers and seas boiling... Human sacrifice, dogs and cats, living together...
+                &lt;p class="visuallyhidden"&gt;This is a quote from the 1984 movie Ghostbusters.&lt;/p&gt;
+                &lt;a href="#" class="read-more"&gt;Read More&lt;span class="visuallyhidden"&gt; about mass hysteria in relation to movie quotes&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+
 
           <div class="line-separator"></div>
           <h2><a name="skiplinks"></a>Skip Links</h2>
@@ -787,12 +843,9 @@
             </code></pre>
           </ul>
 
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip">
-            <br>
-            <br>
-            <strong>Bypass Blocks</strong>
-          </a>
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+          <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip"><strong>2.4.1 Bypass Blocks</strong></a>
+          - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)
           <br>
           <br>
 
@@ -819,23 +872,22 @@
             </li>
           </ul>
           <div>
-          <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-            <br>
+            <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
             <p>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><strong>Use of Color</strong></a>
-            - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)
-            <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast"><strong>Contrast (Minimum)</strong></a>
-            - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)
-            <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale"><strong>Resize Text</strong></a>
-            - Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA)
-            <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>
-            - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
-            <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation"><strong>Visual Presentation</strong></a>
-            - For the visual presentation of blocks of text, a mechanism is available to achieve the following (see WCAG guidelines for more info). (Level AAA)
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color"><strong>1.4.1 Use of Color</strong></a>
+              - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)
+              <br>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast"><strong>1.4.3 Contrast (Minimum)</strong></a>
+              - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)
+              <br>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale"><strong>1.4.4 Resize Text</strong></a>
+              - Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA)
+              <br>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>1.4.5 Images of Text</strong></a>
+              - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
+              <br>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation"><strong>1.4.8 Visual Presentation</strong></a>
+              - For the visual presentation of blocks of text, a mechanism is available to achieve the following (see WCAG guidelines for more info). (Level AAA)
             </p>
           </div>
           <div class="line-separator-light"></div>
@@ -844,6 +896,19 @@
           <p><strong>Verdana Bold</strong></p>
           <p>Verdana Medium</p>
           <p><em><strong>Verdana Bold Italic</strong></em></p>
+          <br>
+
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;h3&gt;Base&lt;/h3&gt;
+              &lt;div style="font: 20px/2 'Verdana'"&gt; Verdana Medium &lt;/div&gt;
+              &lt;div style="font: italic 20px/2 'Verdana'"&gt; Verdana Italic &lt;/div&gt;
+              &lt;div style="font: bold 20px/2 'Verdana'"&gt; Verdana Bold &lt;/div&gt;
+              &lt;div style="font: bold italic 20px/2 'Verdana'"&gt; Verdana Bold Italic &lt;/div&gt;
+              &lt;div class="break"&gt;/div&gt;
+            </code>
+          </pre>
 
           <div class="line-separator"></div>
           <div class="line-separator"></div>
@@ -869,19 +934,28 @@
               </li>
             </ul>
 
-            <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-            <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv"><strong>Non-text Content</strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
+            <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv"><strong>1.1.1 Non-text Content</strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
             <br>
             <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast"><strong>Contrast: Minimum</strong></a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast"><strong>1.4.3 Contrast: Minimum</strong></a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
             <br>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>Images of Text</strong></a>- If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
-
+            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation"><strong>1.4.5 Images of Text</strong></a>- If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
+            <br>
+            <br>
             <div class="images"><img src="./assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background"></div>
-          </div>
-
+          <br>
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;section class="images-section"&gt;
+                &lt;div class="images"&gt;&lt;img src="../assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background"&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+        </div>
           <div class="line-separator"></div>
 
           <div class="Site Logo">
@@ -902,13 +976,15 @@
               </li>
             </ul>
 
-            <button type="button" name="button"><h2>WCAG 2.0 Guidelines</h2></button>
-            <br>
+            <h3 class="resources">Resources</h3>
+            <ul>
+              <li>
+                <a href="http://accessibleicon.org/"><strong>The Accessible Icon Project</strong></a>  </li>
+              <li>
+                <a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility"><strong>Hiding Content</strong></a></li>
+            </ul>
 
-            <a href="http://accessibleicon.org/"><strong>The Accessible Icon Project</strong></a>
-            <br>
-            <a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility"><strong>Hiding Content</strong></a>
-
+            <div class="line-separator-light"></div>
             <h3>Example #1: Logo as a link</h3>
             <a href="https://en.wikipedia.org/wiki/Web_accessibility">
             <img class="imagelink" src="./assets/blueicon.jpg" alt="logo as a link to accessibility wikipedia page">
@@ -939,16 +1015,16 @@
               <li>The markup includes an <code>aria-label="breadcrumbs"</code> to describe the type of navigation.</li>
               <li>Add <code>aria-current="page"</code> to the link that points to the current page. This will tell assistive technology (AT) devices that the focused link is pointing to the current page.</li>
             </ul>
-            <button type="button" name="button"><h2>Resources</h2></button>
+            <h3 class="resources">Resources</h3>
             <ul>
               <li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current"><strong>Accessible Rich Internet Applications (WAI-ARIA) 1.1</strong></a></li>
               <li><a href="https://tink.uk/using-the-aria-current-attribute/"><strong>Using the aria-current attribute</strong></a></li>
             </ul>
-            <button><h2>WCAG 2.0 Guidelines</h2></button>
+            <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
             <p>
-            <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
-            - Information about the user's location within a set of Web pages is available. (Level AAA)
-            <br>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
+              - Information about the user's location within a set of Web pages is available. (Level AAA)
+            </p>
             <div class="line-separator-light"></div>
             <br>
             <section class="breadcrumbs-section">
@@ -980,8 +1056,7 @@
             </section>
             <br>
             <br>
-            <button><h2>Show Markup Example</h2></button>
-            <br>
+            <h3>Markup Example:</h3>
             <pre>
               <code>
                 &lt;section class="breadcrumbs-section"&gt;
@@ -1024,10 +1099,10 @@
               <li>Menus should be labeled according to their individual function. You can use <code>class="visuallyhidden"></code>, <code>aria-label=""</code>, or <code>aria-labelledby=""</code> to easily add context to the different menus on your site.</li>
             </ul>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
-              - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a>
+                - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)
               </p>
             </div>
             <div class="line-separator-light"></div>
@@ -1083,8 +1158,7 @@
               </nav>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
-            <br>
+            <h3>Markup Example:</h3>
             <pre>
               <code>
                 &lt;section class="navbar-section"&gt;
@@ -1152,17 +1226,18 @@
               <li>Add <code>aria-current="page"</code> to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
             </ul>
             <div>
-              <button><h2>Resources</h2></button>
+              <h3 class="resources">Resources</h3>
               <ul>
                 <li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current"><strong>Accessible Rich Internet Applications (WAI-ARIA) 1.1</strong></a></li>
                 <li><a href="https://tink.uk/using-the-aria-current-attribute/"><strong>Using the aria-current attribute</strong></a></li>
               </ul>
             <br>
             <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
+              <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
               <p>
-              <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
-              - Information about the user's location within a set of Web pages is available. (Level AAA)
+                <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location"><strong>2.4.8 Location</strong></a>
+                - Information about the user's location within a set of Web pages is available. (Level AAA)
+              </p>
             </div>
           </div>
           <div class="line-separator-light"></div>
@@ -1182,8 +1257,7 @@
             </nav>
           </section>
           <br>
-          <button><h2>Show Markup Example</h2></button>
-          <br>
+          <h3>Markup Example:</h3>
           <pre>
             <code>
               &lt;section class="pagination-section"&gt;
@@ -1227,434 +1301,450 @@
             </li>
           </ul>
 
-          <button><h2>WCAG 2.0 Guidelines</h2></button>
+          <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
           <a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all">
-            <br>
-            <br>
-            <strong>1.1.1 Non-text Content </strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
-            <br>
-            <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
+          <strong>1.1.1 Non-text Content </strong></a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
+          <br>
+          <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
+          <br>
+          <br>
+          <div class="line-separator-light"></div>
 
-            <h1 class="structureheadings">I’m writing the code,</h1>
+          <h1 class="structureheadings">I’m writing the code,</h1>
 
-            <h2 class="structureheadings">but I do not realize,</h2>
+          <h2 class="structureheadings">but I do not realize,</h2>
 
-            <h3 class="structureheadings">hours have gone by.</h3>
+          <h3 class="structureheadings">hours have gone by.</h3>
 
-            <h4 class="structureheadings">My eyes are bloodshot,</h4>
+          <h4 class="structureheadings">My eyes are bloodshot,</h4>
 
-            <h5 class="structureheadings">My fingertips are bleeding,</h5>
+          <h5 class="structureheadings">My fingertips are bleeding,</h5>
 
-            <h6 class="structureheadings">but I carry on.</h6>
+          <h6 class="structureheadings">but I carry on.</h6>
 
-          </div>
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;section class="headings-section"&gt;
+                &lt;div&gt;
+                  &lt;h1&gt;I’m writing the code,&lt;/h1&gt;
+                  &lt;h2&gt;but I do not realize,&lt;/h2&gt;
+                  &lt;h3&gt;hours have gone by.&lt;/h3&gt;
+                  &lt;h4&gt;My eyes are bloodshot,&lt;/h4&gt;
+                  &lt;h5&gt;My fingertips are bleeding,&lt;/h5&gt;
+                  &lt;h6&gt;but I carry on.&lt;/h6&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
 
-          <div class="line-separator"></div>
+        </div>
 
-          <div class="tables">
-            <h2><a name="tables"></a>Tables</h2>
+        <div class="line-separator"></div>
+
+        <div class="tables">
+          <h2><a name="tables"></a>Tables</h2>
+          <ul>
+            <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
+            <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope="row"&gt;</code>. For header columns use <code>&lt;th scope="col"&gt;</code></li>
+            <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+          </ul>
+          <div>
+            <h3 class="resources">Resources</h3>
             <ul>
-              <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
-              <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope="row"&gt;</code>. For header columns use <code>&lt;th scope="col"&gt;</code></li>
-              <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+              <li><a href="https://www.w3.org/WAI/tutorials/tables/"><strong>Web Accessibility Tutorials - Table Concepts</strong></a></li>
             </ul>
-            <div>
-              <button><h2>Resources</h2></button>
-              <ul>
-                <li><a href="https://www.w3.org/WAI/tutorials/tables/"><strong>Web Accessibility Tutorials - Table Concepts</strong></a></li>
-              </ul>
+          <br>
+          </div>
+          <div>
+            <h3 class="guidelines">WCAG 2.0 Guidelines</h3>
+            <p>
+              <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
+              - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
+            </p>
             <br>
-            </div>
-            <div>
-              <button><h2>WCAG 2.0 Guidelines</h2></button>
-              <p>
-                <a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a>
-                - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)
-              </p>
-              <br>
-            </div>
-            <div class="line-separator-light"></div>
+          </div>
+          <div class="line-separator-light"></div>
 
-            <section class="tables-section">
-              <h3>Option #1: Table with one header</h3>
-              <table class="tables" cellspacing="0" summary="Information for surprise party">
-              	<tr>
-              		<th>Date</th>
-              		<th>Event</th>
-              		<th>Venue</th>
-              	</tr>
-              	<tr>
-              		<td>3 February</td>
-              		<td>Surprise Party</td>
-              		<td>Party Town USA</td>
-              	</tr>
+          <section class="tables-section">
+            <h3>Option #1: Table with one header</h3>
+            <table class="tables" cellspacing="0" summary="Information for surprise party">
+            	<tr>
+            		<th>Date</th>
+            		<th>Event</th>
+            		<th>Venue</th>
+            	</tr>
+            	<tr>
+            		<td>3 February</td>
+            		<td>Surprise Party</td>
+            		<td>Party Town USA</td>
+            	</tr>
+            </table>
+            <br>
+            <div class="line-separator-light"></div>
+            <section class="tables-section2">
+              <h3>Option #2: Table with two headers and caption</h3>
+              <table class="tables" cellspacing="0">
+                <caption>Color Names in Multiple Languages</caption>
+                <tr class="headers">
+                  <th scope="col">Color</th>
+                  <th scope="col">French</th>
+                  <th scope="col">German</th>
+                  <th scope="col">Italian</th>
+                  <th scope="col">Portuguese</th>
+                  <th scope="col">Spanish</th>
+                </tr>
+                <tr>
+                  <th scope="row">Red</th>
+                  <td>rouge</td>
+                  <td>rot</td>
+                  <td>rosso</td>
+                  <td>vermelho</td>
+                  <td>rojo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Orange</th>
+                  <td>orange</td>
+                  <td>orange</td>
+                  <td>arancione</td>
+                  <td>laranja</td>
+                  <td>anaranjado</td>
+                </tr>
+                <tr>
+                  <th scope="row">Yellow</th>
+                  <td>jaune</td>
+                  <td>gelb</td>
+                  <td>giallo</td>
+                  <td>amarelo</td>
+                  <td>amarillo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Green</th>
+                  <td>vert</td>
+                  <td>grün</td>
+                  <td>verde</td>
+                  <td>verde</td>
+                  <td>verde</td>
+                </tr>
+                <tr>
+                  <th scope="row">Blue</th>
+                  <td>bleu</td>
+                  <td>blau</td>
+                  <td>blu</td>
+                  <td>azul</td>
+                  <td>azul</td>
+                </tr>
+                <tr>
+                  <th scope="row">Purple</th>
+                  <td>pourpre</td>
+                  <td>lila</td>
+                  <td>porpora</td>
+                  <td>roxo</td>
+                  <td>morado</td>
+                </tr>
               </table>
-              <br>
-              <div class="line-separator-light"></div>
-              <section class="tables-section2">
-                <h3>Option #2: Table with two headers and caption</h3>
-                <table class="tables" cellspacing="0">
-                  <caption>Color Names in Multiple Languages</caption>
-                  <tr class="headers">
-                    <th scope="col">Color</th>
-                    <th scope="col">French</th>
-                    <th scope="col">German</th>
-                    <th scope="col">Italian</th>
-                    <th scope="col">Portuguese</th>
-                    <th scope="col">Spanish</th>
-                  </tr>
-                  <tr>
-                    <th scope="row">Red</th>
-                    <td>rouge</td>
-                    <td>rot</td>
-                    <td>rosso</td>
-                    <td>vermelho</td>
-                    <td>rojo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Orange</th>
-                    <td>orange</td>
-                    <td>orange</td>
-                    <td>arancione</td>
-                    <td>laranja</td>
-                    <td>anaranjado</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Yellow</th>
-                    <td>jaune</td>
-                    <td>gelb</td>
-                    <td>giallo</td>
-                    <td>amarelo</td>
-                    <td>amarillo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Green</th>
-                    <td>vert</td>
-                    <td>grün</td>
-                    <td>verde</td>
-                    <td>verde</td>
-                    <td>verde</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Blue</th>
-                    <td>bleu</td>
-                    <td>blau</td>
-                    <td>blu</td>
-                    <td>azul</td>
-                    <td>azul</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Purple</th>
-                    <td>pourpre</td>
-                    <td>lila</td>
-                    <td>porpora</td>
-                    <td>roxo</td>
-                    <td>morado</td>
-                  </tr>
-                </table>
-              </section>
-              <br>
-              <div class="line-separator-light"></div>
-              <section class="tables-section3">
-                <h3>Option #3: Complex Table</h3>
-                <table class="tables" cellspacing="0">
-                	<tbody>
-                		<tr class="headers">
-                			<th id="co1" headers="blank">Kingdom</th>
-                			<th id="co2" headers="blank">Phylum</th>
-                			<th id="co3" headers="blank">Class</th>
-                			<th id="co4" headers="blank">Order</th>
-                		</tr>
-                		<tr>
-                			<td headers="co1">Animalia</td>
-                			<td headers="co2">Chordata</td>
-                			<td headers="co3">Mammalia</td>
-                			<td headers="co4">Carnivora</td>
-                		</tr>
-                		<tr>
-                			<td headers="co1">Animalia</td>
-                			<td headers="co2">Arthropoda</td>
-                			<td headers="co3">Insecta</td>
-                			<td headers="co4">Lepidoptera</td>
-                		</tr>
-                		<tr>
-                			<td headers="co1">Animalia</td>
-                			<td headers="co2">Echinodermata</td>
-                			<td headers="co3">Asteroidea</td>
-                			<td headers="co4">Forcipulatida</td>
-                		</tr>
-              		  <tr class="headers">
-                      <th id="co5" headers="blank">Family</th>
-                			<th id="co6" headers="blank">Genus</th>
-                			<th id="co7" headers="blank">Species</th>
-                			<th id="co8" headers="blank">Common</th>
-                		</tr>
-                		<tr>
-                			<td headers="co5">Felidae</td>
-                			<td headers="co6">Panthera</td>
-                			<td headers="co7">Panthera tigris</td>
-                			<td headers="co8">Tiger</td>
-                		</tr>
-                		<tr>
-                			<td headers="co5">Danaidae</td>
-                			<td headers="co6">Dannaus</td>
-                			<td headers="co7">Plexippus</td>
-                			<td headers="co8">Monarch Butterfly</td>
-                		</tr>
-                		<tr>
-                			<td headers="co5">Asteriidae</td>
-                			<td headers="co6">Asterias</td>
-                			<td headers="co7">Asterias amurensis</td>
-                			<td headers="co8">Northern Pacific seastar</td>
-                		</tr>
-                	</tbody>
-                </table>
-              </section>
-              <br>
-              <div class="line-separator-light"></div>
-              <section>
-                <h3>Option #4: Responsive Table</h3>
-                <table class="responsive-table" id="responsive-tableID">
-                  <thead>
-                    <tr align="center">
-                      <th class="responsive">House Side</th>
-                      <th class="responsive">House Address</th>
-                      <th class="responsive">Other</th>
-                      <th class="responsive">Other Address</th>
-                      <th class="responsive">Senate Side</th>
-                      <th class="responsive">Senate Address</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="responsive">Rayburn House Office Building</td>
-                      <td class="responsive">50 Independence Ave, SW Washington, DC 20515</td>
-                      <td class="responsive">Library of Congress</td>
-                      <td class="responsive">101 Independence Ave SE, Washington, DC 20540</td>
-                      <td class="responsive">Russell Senate Office Building</td>
-                      <td class="responsive">2 Constitution Ave NE, Washington, DC 20002</td>
-                    </tr>
-                    <tr>
-                      <td class="responsive">Longworth House Office Building</td>
-                      <td class="responsive">15 Independence Ave, SW Washington, DC 20515</td>
-                      <td class="responsive">Supreme Court</td>
-                      <td class="responsive">1 First Street, NE Washington, DC 20543</td>
-                      <td class="responsive">Dirksen Senate Office Building</td>
-                      <td class="responsive">100 Constitution Ave NE Washington, DC 20002</td>
-                    </tr>
-                    <tr>
-                      <td class="responsive">Cannon House Office Building</td>
-                      <td class="responsive">25 Independence Ave, SE Washington, DC 20003</td>
-                      <td class="responsive">Capitol Visitors Center</td>
-                      <td class="responsive">First &amp; East Capitol St SE, Washington, DC 20004</td>
-                      <td class="responsive">Hart Senate Office Building</td>
-                      <td class="responsive">150 Constitution Ave NE Washington, DC 20510</td>
-                    </tr>
-                    <tr>
-                      <td class="responsive">Capitol South Metro</td>
-                      <td class="responsive">307 First Street SE Washington, DC 20003</td>
-                      <td class="responsive">Federal Center Metro</td>
-                      <td class="responsive">401 3rd Street SW Washington, DC 20024</td>
-                      <td class="responsive">Union Station Metro</td>
-                      <td class="responsive">701 First St. NE Washington, DC 20002</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
             </section>
             <br>
-            <button><h2>Show Markup Example</h2></button>
+            <div class="line-separator-light"></div>
+            <section class="tables-section3">
+              <h3>Option #3: Complex Table</h3>
+              <table class="tables" cellspacing="0">
+              	<tbody>
+              		<tr class="headers">
+              			<th id="co1" headers="blank">Kingdom</th>
+              			<th id="co2" headers="blank">Phylum</th>
+              			<th id="co3" headers="blank">Class</th>
+              			<th id="co4" headers="blank">Order</th>
+              		</tr>
+              		<tr>
+              			<td headers="co1">Animalia</td>
+              			<td headers="co2">Chordata</td>
+              			<td headers="co3">Mammalia</td>
+              			<td headers="co4">Carnivora</td>
+              		</tr>
+              		<tr>
+              			<td headers="co1">Animalia</td>
+              			<td headers="co2">Arthropoda</td>
+              			<td headers="co3">Insecta</td>
+              			<td headers="co4">Lepidoptera</td>
+              		</tr>
+              		<tr>
+              			<td headers="co1">Animalia</td>
+              			<td headers="co2">Echinodermata</td>
+              			<td headers="co3">Asteroidea</td>
+              			<td headers="co4">Forcipulatida</td>
+              		</tr>
+            		  <tr class="headers">
+                    <th id="co5" headers="blank">Family</th>
+              			<th id="co6" headers="blank">Genus</th>
+              			<th id="co7" headers="blank">Species</th>
+              			<th id="co8" headers="blank">Common</th>
+              		</tr>
+              		<tr>
+              			<td headers="co5">Felidae</td>
+              			<td headers="co6">Panthera</td>
+              			<td headers="co7">Panthera tigris</td>
+              			<td headers="co8">Tiger</td>
+              		</tr>
+              		<tr>
+              			<td headers="co5">Danaidae</td>
+              			<td headers="co6">Dannaus</td>
+              			<td headers="co7">Plexippus</td>
+              			<td headers="co8">Monarch Butterfly</td>
+              		</tr>
+              		<tr>
+              			<td headers="co5">Asteriidae</td>
+              			<td headers="co6">Asterias</td>
+              			<td headers="co7">Asterias amurensis</td>
+              			<td headers="co8">Northern Pacific seastar</td>
+              		</tr>
+              	</tbody>
+              </table>
+            </section>
             <br>
-            <pre>
-              <code>
-                &lt;section class="tables-section"&gt;
-                  &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
-                  &lt;table class="tables" cellspacing="0" summary="Information for surprise party"&gt;
-                  	&lt;tr&gt;
-                  		&lt;th&gt;Date&lt;/th&gt;
-                  		&lt;th&gt;Event&lt;/th&gt;
-                  		&lt;th&gt;Venue&lt;/th&gt;
-                  	&lt;/tr&gt;
-                  	&lt;tr&gt;
-                  		&lt;td&gt;3 February&lt;/td&gt;
-                  		&lt;td&gt;Surprise Party&lt;/td&gt;
-                  		&lt;td&gt;Party Town USA&lt;/td&gt;
-                  	&lt;/tr&gt;
-                  &lt;/table&gt;
-                &lt;/section&gt;
-                &lt;section class="tables-section2"&gt;
-                  &lt;div class="break"&gt;&lt;/div&gt;
-                  &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
-                  &lt;table class="tables" cellspacing="0"&gt;
-                    &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
-                    &lt;tr class="headers"&gt;
-                      &lt;th scope="col"&gt;Color&lt;/th&gt;
-                      &lt;th scope="col"&gt;French&lt;/th&gt;
-                      &lt;th scope="col"&gt;German&lt;/th&gt;
-                      &lt;th scope="col"&gt;Italian&lt;/th&gt;
-                      &lt;th scope="col"&gt;Portuguese&lt;/th&gt;
-                      &lt;th scope="col"&gt;Spanish&lt;/th&gt;
+            <div class="line-separator-light"></div>
+            <section>
+              <h3>Option #4: Responsive Table</h3>
+              <table class="responsive-table" id="responsive-tableID">
+                <thead>
+                  <tr align="center">
+                    <th class="responsive">House Side</th>
+                    <th class="responsive">House Address</th>
+                    <th class="responsive">Other</th>
+                    <th class="responsive">Other Address</th>
+                    <th class="responsive">Senate Side</th>
+                    <th class="responsive">Senate Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="responsive">Rayburn House Office Building</td>
+                    <td class="responsive">50 Independence Ave, SW Washington, DC 20515</td>
+                    <td class="responsive">Library of Congress</td>
+                    <td class="responsive">101 Independence Ave SE, Washington, DC 20540</td>
+                    <td class="responsive">Russell Senate Office Building</td>
+                    <td class="responsive">2 Constitution Ave NE, Washington, DC 20002</td>
+                  </tr>
+                  <tr>
+                    <td class="responsive">Longworth House Office Building</td>
+                    <td class="responsive">15 Independence Ave, SW Washington, DC 20515</td>
+                    <td class="responsive">Supreme Court</td>
+                    <td class="responsive">1 First Street, NE Washington, DC 20543</td>
+                    <td class="responsive">Dirksen Senate Office Building</td>
+                    <td class="responsive">100 Constitution Ave NE Washington, DC 20002</td>
+                  </tr>
+                  <tr>
+                    <td class="responsive">Cannon House Office Building</td>
+                    <td class="responsive">25 Independence Ave, SE Washington, DC 20003</td>
+                    <td class="responsive">Capitol Visitors Center</td>
+                    <td class="responsive">First &amp; East Capitol St SE, Washington, DC 20004</td>
+                    <td class="responsive">Hart Senate Office Building</td>
+                    <td class="responsive">150 Constitution Ave NE Washington, DC 20510</td>
+                  </tr>
+                  <tr>
+                    <td class="responsive">Capitol South Metro</td>
+                    <td class="responsive">307 First Street SE Washington, DC 20003</td>
+                    <td class="responsive">Federal Center Metro</td>
+                    <td class="responsive">401 3rd Street SW Washington, DC 20024</td>
+                    <td class="responsive">Union Station Metro</td>
+                    <td class="responsive">701 First St. NE Washington, DC 20002</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+          <br>
+          <h3>Markup Example:</h3>
+          <pre>
+            <code>
+              &lt;section class="tables-section"&gt;
+                &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
+                &lt;table class="tables" cellspacing="0" summary="Information for surprise party"&gt;
+                	&lt;tr&gt;
+                		&lt;th&gt;Date&lt;/th&gt;
+                		&lt;th&gt;Event&lt;/th&gt;
+                		&lt;th&gt;Venue&lt;/th&gt;
+                	&lt;/tr&gt;
+                	&lt;tr&gt;
+                		&lt;td&gt;3 February&lt;/td&gt;
+                		&lt;td&gt;Surprise Party&lt;/td&gt;
+                		&lt;td&gt;Party Town USA&lt;/td&gt;
+                	&lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/section&gt;
+              &lt;section class="tables-section2"&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
+                &lt;table class="tables" cellspacing="0"&gt;
+                  &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
+                  &lt;tr class="headers"&gt;
+                    &lt;th scope="col"&gt;Color&lt;/th&gt;
+                    &lt;th scope="col"&gt;French&lt;/th&gt;
+                    &lt;th scope="col"&gt;German&lt;/th&gt;
+                    &lt;th scope="col"&gt;Italian&lt;/th&gt;
+                    &lt;th scope="col"&gt;Portuguese&lt;/th&gt;
+                    &lt;th scope="col"&gt;Spanish&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Red&lt;/th&gt;
+                    &lt;td&gt;rouge&lt;/td&gt;
+                    &lt;td&gt;rot&lt;/td&gt;
+                    &lt;td&gt;rosso&lt;/td&gt;
+                    &lt;td&gt;vermelho&lt;/td&gt;
+                    &lt;td&gt;rojo&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Orange&lt;/th&gt;
+                    &lt;td&gt;orange&lt;/td&gt;
+                    &lt;td&gt;orange&lt;/td&gt;
+                    &lt;td&gt;arancione&lt;/td&gt;
+                    &lt;td&gt;laranja&lt;/td&gt;
+                    &lt;td&gt;anaranjado&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Yellow&lt;/th&gt;
+                    &lt;td&gt;jaune&lt;/td&gt;
+                    &lt;td&gt;gelb&lt;/td&gt;
+                    &lt;td&gt;giallo&lt;/td&gt;
+                    &lt;td&gt;amarelo&lt;/td&gt;
+                    &lt;td&gt;amarillo&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Green&lt;/th&gt;
+                    &lt;td&gt;vert&lt;/td&gt;
+                    &lt;td&gt;grün&lt;/td&gt;
+                    &lt;td&gt;verde&lt;/td&gt;
+                    &lt;td&gt;verde&lt;/td&gt;
+                    &lt;td&gt;verde&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Blue&lt;/th&gt;
+                    &lt;td&gt;bleu&lt;/td&gt;
+                    &lt;td&gt;blau&lt;/td&gt;
+                    &lt;td&gt;blu&lt;/td&gt;
+                    &lt;td&gt;azul&lt;/td&gt;
+                    &lt;td&gt;azul&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Purple&lt;/th&gt;
+                    &lt;td&gt;pourpre&lt;/td&gt;
+                    &lt;td&gt;lila&lt;/td&gt;
+                    &lt;td&gt;porpora&lt;/td&gt;
+                    &lt;td&gt;roxo&lt;/td&gt;
+                    &lt;td&gt;morado&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/section&gt;
+              &lt;section class="tables-section3"&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Option #3: Complex Table&lt;/h3&gt;
+                &lt;table class="tables" cellspacing="0"&gt;
+                	&lt;tbody&gt;
+                		&lt;tr class="headers"&gt;
+                			&lt;th id="co1" headers="blank"&gt;Kingdom&lt;/th&gt;
+                			&lt;th id="co2" headers="blank"&gt;Phylum&lt;/th&gt;
+                			&lt;th id="co3" headers="blank"&gt;Class&lt;/th&gt;
+                			&lt;th id="co4" headers="blank"&gt;Order&lt;/th&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                			&lt;td headers="co2"&gt;Chordata&lt;/td&gt;
+                			&lt;td headers="co3"&gt;Mammalia&lt;/td&gt;
+                			&lt;td headers="co4"&gt;Carnivora&lt;/td&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                			&lt;td headers="co2"&gt;Arthropoda&lt;/td&gt;
+                			&lt;td headers="co3"&gt;Insecta&lt;/td&gt;
+                			&lt;td headers="co4"&gt;Lepidoptera&lt;/td&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
+                			&lt;td headers="co2"&gt;Echinodermata&lt;/td&gt;
+                			&lt;td headers="co3"&gt;Asteroidea&lt;/td&gt;
+                			&lt;td headers="co4"&gt;Forcipulatida&lt;/td&gt;
+                		&lt;/tr&gt;
+              		  &lt;tr class="headers"&gt;
+                      &lt;th id="co5" headers="blank"&gt;Family&lt;/th&gt;
+                			&lt;th id="co6" headers="blank"&gt;Genus&lt;/th&gt;
+                			&lt;th id="co7" headers="blank"&gt;Species&lt;/th&gt;
+                			&lt;th id="co8" headers="blank"&gt;Common&lt;/th&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co5"&gt;Felidae&lt;/td&gt;
+                			&lt;td headers="co6"&gt;Panthera&lt;/td&gt;
+                			&lt;td headers="co7"&gt;Panthera tigris&lt;/td&gt;
+                			&lt;td headers="co8"&gt;Tiger&lt;/td&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co5"&gt;Danaidae&lt;/td&gt;
+                			&lt;td headers="co6"&gt;Dannaus&lt;/td&gt;
+                			&lt;td headers="co7"&gt;Plexippus&lt;/td&gt;
+                			&lt;td headers="co8"&gt;Monarch Butterfly&lt;/td&gt;
+                		&lt;/tr&gt;
+                		&lt;tr&gt;
+                			&lt;td headers="co5"&gt;Asteriidae&lt;/td&gt;
+                			&lt;td headers="co6"&gt;Asterias&lt;/td&gt;
+                			&lt;td headers="co7"&gt;Asterias amurensis&lt;/td&gt;
+                			&lt;td headers="co8"&gt;Northern Pacific seastar&lt;/td&gt;
+                		&lt;/tr&gt;
+                	&lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/section&gt;
+              &lt;section&gt;
+                &lt;div class="break"&gt;&lt;/div&gt;
+                &lt;h3&gt;Option #4: Responsive Table&lt;/h3&gt;
+                &lt;table class="responsive-table" id="responsive-tableID"&gt;
+                  &lt;thead&gt;
+                    &lt;tr align="center"&gt;
+                      &lt;th class="responsive"&gt;House Side&lt;/th&gt;
+                      &lt;th class="responsive"&gt;House Address&lt;/th&gt;
+                      &lt;th class="responsive"&gt;Other&lt;/th&gt;
+                      &lt;th class="responsive"&gt;Other Address&lt;/th&gt;
+                      &lt;th class="responsive"&gt;Senate Side&lt;/th&gt;
+                      &lt;th class="responsive"&gt;Senate Address&lt;/th&gt;
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;td class="responsive"&gt;Rayburn House Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Library of Congress&lt;/td&gt;
+                      &lt;td class="responsive"&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Russell Senate Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;tr&gt;
-                      &lt;th scope="row"&gt;Red&lt;/th&gt;
-                      &lt;td&gt;rouge&lt;/td&gt;
-                      &lt;td&gt;rot&lt;/td&gt;
-                      &lt;td&gt;rosso&lt;/td&gt;
-                      &lt;td&gt;vermelho&lt;/td&gt;
-                      &lt;td&gt;rojo&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Longworth House Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Supreme Court&lt;/td&gt;
+                      &lt;td class="responsive"&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Dirksen Senate Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;tr&gt;
-                      &lt;th scope="row"&gt;Orange&lt;/th&gt;
-                      &lt;td&gt;orange&lt;/td&gt;
-                      &lt;td&gt;orange&lt;/td&gt;
-                      &lt;td&gt;arancione&lt;/td&gt;
-                      &lt;td&gt;laranja&lt;/td&gt;
-                      &lt;td&gt;anaranjado&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Cannon House Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Capitol Visitors Center&lt;/td&gt;
+                      &lt;td class="responsive"&gt;First &amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Hart Senate Office Building&lt;/td&gt;
+                      &lt;td class="responsive"&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;tr&gt;
-                      &lt;th scope="row"&gt;Yellow&lt;/th&gt;
-                      &lt;td&gt;jaune&lt;/td&gt;
-                      &lt;td&gt;gelb&lt;/td&gt;
-                      &lt;td&gt;giallo&lt;/td&gt;
-                      &lt;td&gt;amarelo&lt;/td&gt;
-                      &lt;td&gt;amarillo&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Capitol South Metro&lt;/td&gt;
+                      &lt;td class="responsive"&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Federal Center Metro&lt;/td&gt;
+                      &lt;td class="responsive"&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
+                      &lt;td class="responsive"&gt;Union Station Metro&lt;/td&gt;
+                      &lt;td class="responsive"&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
                     &lt;/tr&gt;
-                    &lt;tr&gt;
-                      &lt;th scope="row"&gt;Green&lt;/th&gt;
-                      &lt;td&gt;vert&lt;/td&gt;
-                      &lt;td&gt;grün&lt;/td&gt;
-                      &lt;td&gt;verde&lt;/td&gt;
-                      &lt;td&gt;verde&lt;/td&gt;
-                      &lt;td&gt;verde&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                      &lt;th scope="row"&gt;Blue&lt;/th&gt;
-                      &lt;td&gt;bleu&lt;/td&gt;
-                      &lt;td&gt;blau&lt;/td&gt;
-                      &lt;td&gt;blu&lt;/td&gt;
-                      &lt;td&gt;azul&lt;/td&gt;
-                      &lt;td&gt;azul&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                      &lt;th scope="row"&gt;Purple&lt;/th&gt;
-                      &lt;td&gt;pourpre&lt;/td&gt;
-                      &lt;td&gt;lila&lt;/td&gt;
-                      &lt;td&gt;porpora&lt;/td&gt;
-                      &lt;td&gt;roxo&lt;/td&gt;
-                      &lt;td&gt;morado&lt;/td&gt;
-                    &lt;/tr&gt;
-                  &lt;/table&gt;
-                &lt;/section&gt;
-                &lt;section class="tables-section3"&gt;
-                  &lt;div class="break"&gt;&lt;/div&gt;
-                  &lt;h3&gt;Option #3: Complex Table&lt;/h3&gt;
-                  &lt;table class="tables" cellspacing="0"&gt;
-                  	&lt;tbody&gt;
-                  		&lt;tr class="headers"&gt;
-                  			&lt;th id="co1" headers="blank"&gt;Kingdom&lt;/th&gt;
-                  			&lt;th id="co2" headers="blank"&gt;Phylum&lt;/th&gt;
-                  			&lt;th id="co3" headers="blank"&gt;Class&lt;/th&gt;
-                  			&lt;th id="co4" headers="blank"&gt;Order&lt;/th&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
-                  			&lt;td headers="co2"&gt;Chordata&lt;/td&gt;
-                  			&lt;td headers="co3"&gt;Mammalia&lt;/td&gt;
-                  			&lt;td headers="co4"&gt;Carnivora&lt;/td&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
-                  			&lt;td headers="co2"&gt;Arthropoda&lt;/td&gt;
-                  			&lt;td headers="co3"&gt;Insecta&lt;/td&gt;
-                  			&lt;td headers="co4"&gt;Lepidoptera&lt;/td&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co1"&gt;Animalia&lt;/td&gt;
-                  			&lt;td headers="co2"&gt;Echinodermata&lt;/td&gt;
-                  			&lt;td headers="co3"&gt;Asteroidea&lt;/td&gt;
-                  			&lt;td headers="co4"&gt;Forcipulatida&lt;/td&gt;
-                  		&lt;/tr&gt;
-                		  &lt;tr class="headers"&gt;
-                        &lt;th id="co5" headers="blank"&gt;Family&lt;/th&gt;
-                  			&lt;th id="co6" headers="blank"&gt;Genus&lt;/th&gt;
-                  			&lt;th id="co7" headers="blank"&gt;Species&lt;/th&gt;
-                  			&lt;th id="co8" headers="blank"&gt;Common&lt;/th&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co5"&gt;Felidae&lt;/td&gt;
-                  			&lt;td headers="co6"&gt;Panthera&lt;/td&gt;
-                  			&lt;td headers="co7"&gt;Panthera tigris&lt;/td&gt;
-                  			&lt;td headers="co8"&gt;Tiger&lt;/td&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co5"&gt;Danaidae&lt;/td&gt;
-                  			&lt;td headers="co6"&gt;Dannaus&lt;/td&gt;
-                  			&lt;td headers="co7"&gt;Plexippus&lt;/td&gt;
-                  			&lt;td headers="co8"&gt;Monarch Butterfly&lt;/td&gt;
-                  		&lt;/tr&gt;
-                  		&lt;tr&gt;
-                  			&lt;td headers="co5"&gt;Asteriidae&lt;/td&gt;
-                  			&lt;td headers="co6"&gt;Asterias&lt;/td&gt;
-                  			&lt;td headers="co7"&gt;Asterias amurensis&lt;/td&gt;
-                  			&lt;td headers="co8"&gt;Northern Pacific seastar&lt;/td&gt;
-                  		&lt;/tr&gt;
-                  	&lt;/tbody&gt;
-                  &lt;/table&gt;
-                &lt;/section&gt;
-                &lt;section&gt;
-                  &lt;div class="break"&gt;&lt;/div&gt;
-                  &lt;h3&gt;Option #4: Responsive Table&lt;/h3&gt;
-                  &lt;table class="responsive-table" id="responsive-tableID"&gt;
-                    &lt;thead&gt;
-                      &lt;tr align="center"&gt;
-                        &lt;th class="responsive"&gt;House Side&lt;/th&gt;
-                        &lt;th class="responsive"&gt;House Address&lt;/th&gt;
-                        &lt;th class="responsive"&gt;Other&lt;/th&gt;
-                        &lt;th class="responsive"&gt;Other Address&lt;/th&gt;
-                        &lt;th class="responsive"&gt;Senate Side&lt;/th&gt;
-                        &lt;th class="responsive"&gt;Senate Address&lt;/th&gt;
-                      &lt;/tr&gt;
-                    &lt;/thead&gt;
-                    &lt;tbody&gt;
-                      &lt;tr&gt;
-                        &lt;td class="responsive"&gt;Rayburn House Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Library of Congress&lt;/td&gt;
-                        &lt;td class="responsive"&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Russell Senate Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td class="responsive"&gt;Longworth House Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Supreme Court&lt;/td&gt;
-                        &lt;td class="responsive"&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Dirksen Senate Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td class="responsive"&gt;Cannon House Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Capitol Visitors Center&lt;/td&gt;
-                        &lt;td class="responsive"&gt;First &amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Hart Senate Office Building&lt;/td&gt;
-                        &lt;td class="responsive"&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td class="responsive"&gt;Capitol South Metro&lt;/td&gt;
-                        &lt;td class="responsive"&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Federal Center Metro&lt;/td&gt;
-                        &lt;td class="responsive"&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
-                        &lt;td class="responsive"&gt;Union Station Metro&lt;/td&gt;
-                        &lt;td class="responsive"&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/tbody&gt;
-                  &lt;/table&gt;
-                &lt;/section&gt;
-              </code>
-            </pre>
-            <br>
-          </div>
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+          <br>
+        </div>
       </main>
     </div>
   </body>
