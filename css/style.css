@@ -279,3 +279,7 @@ pre code {
   max-width: 215px;
   border: 0;
 }
+
+.structureheadings {
+  color: black;
+}
